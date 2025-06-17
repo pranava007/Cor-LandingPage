@@ -15,7 +15,7 @@
   <div class="max-w-5xl mx-auto">
     
     <!-- Headline -->
-    <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
+    <h1 class="text-3xl md:text-6xl font-extrabold leading-tight">
       <span class="block">Empower <span class="text-yellow-300">Your People.</span></span>
       <span class="block text-white">Elevate Your Business With AI.</span>
     </h1>
@@ -89,7 +89,7 @@
 
 
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       <!-- Card -->
 <div class="bg-white  p-7 border border-purple-200 ring-2 ring-purple-500 rounded-3xl shadow-lg hover:shadow-purple-500 transition-all duration-300 hover:scale-[1.03] group">
   <h3 class="text-2xl font-extrabold text-purple-700 mb-4 ">
@@ -151,7 +151,7 @@
     Boost Your Brand with AI-Powered
   </h3>
 
-  <p class="text-gray-700 text-sm leading-relaxed space-y-2 line-clamp-2 transition-all duration-300" id="text2">
+  <p class="text-gray-700 text-sm leading-relaxed space-y-2 line-clamp-3 transition-all duration-300" id="text2">
     <span class="block font-semibold text-gray-700">
       “If AI is part of your brand dream — we’ll help you build it.”
     </span>
@@ -202,7 +202,7 @@
     AI Readiness Program for Visionary Startup Builders
   </h3>
 
-  <p class="text-gray-700 text-sm leading-relaxed space-y-2 line-clamp-1 transition-all duration-300"  id="text3">
+  <p class="text-gray-700 text-sm leading-relaxed space-y-2 line-clamp-3 transition-all duration-300"  id="text3">
     <span class="block font-semibold text-gray-700">
       “Dreaming of an AI-first startup? Let’s make it real.”
     </span>
@@ -253,7 +253,7 @@
     Foundational AI Training for Early-Stage
   </h3>
 
-  <p class="text-gray-700 text-sm leading-relaxed space-y-2 line-clamp-2 transition-all duration-300" id="text4">
+  <p class="text-gray-700 text-sm leading-relaxed space-y-2 line-clamp-3 transition-all duration-300" id="text4">
     <span class="block font-semibold text-gray-700 italic">
       “Considering AI is the Future? Not sure where to begin with AI? This is your first step.”
     </span>
@@ -295,7 +295,7 @@
     AI-Savvy Leaders. AI-Ready Teams.
   </h3>
 
-  <p class= "text-gray-700 text-sm leading-relaxed space-y-2 line-clamp-2 transition-all duration-300" id="text5">
+  <p class= "text-gray-700 text-sm leading-relaxed space-y-2 line-clamp-3 transition-all duration-300" id="text5">
     <span class="block font-semibold text-gray-700 italic">
       “For visionary CEOs who want their teams to match their AI pace.”
     </span>
@@ -503,20 +503,20 @@ your domain, goals, and team structure)
 
     <!-- javascript -->
     <!-- Add at end of body -->
-  <script>
+<script>
   function toggleText(id, btn) {
     const para = document.getElementById(id);
-    const isClamped = para.classList.contains("line-clamp-5");
+    para.classList.toggle('line-clamp-3');
 
-    if (isClamped) {
-      para.classList.remove("line-clamp-5");
-      btn.textContent = "Read more";
+    // Optional: Change button text
+    if (para.classList.contains('line-clamp-3')) {
+      btn.textContent = 'Read more';
     } else {
-      para.classList.add("line-clamp-5");
-      btn.textContent = "Read Less";
+      btn.textContent = 'Read less';
     }
   }
 </script>
+
 
 
     <!-- Tailwind Plugin for line clamp -->
