@@ -13,9 +13,19 @@
   <body class="bg-[#FBF4FF] text-gray-800">
     <!-- Hero Section -->
 
-  <section class="bg-[#6B21A8] py-16 md:py-24 px-7 text-center text-white">
-  <div class="max-w-5xl mx-auto">
-    
+<section class="relative bg-[#6B21A8] py-16 md:py-24 px-7 text-center text-white overflow-hidden">
+  
+  <!-- Background Image with Opacity -->
+  <div class="absolute inset-0">
+    <img src="https://i.postimg.cc/W4x6WfSV/corapara.jpg" alt="Corporate AI Background" 
+         class="w-full h-full object-cover opacity-30" />
+  </div>
+
+  <!-- Overlay (optional dark layer for extra contrast) -->
+  <div class="absolute inset-0 bg-[#6B21A8]/60"></div>
+
+  <!-- Content -->
+  <div class="relative max-w-5xl mx-auto z-10">
     <!-- Headline -->
     <h1 class="text-3xl md:text-6xl font-extrabold leading-tight">
       <span class="block">Empower <span class="text-yellow-300">Your People</span></span>
@@ -32,7 +42,7 @@
     </p>
 
     <!-- CTA Button -->
-    <div class="mt-10 ">
+    <div class="mt-10">
       <a href="https://calendly.com/hopeai/hope-ai-book-call-enroll-now?month=2025-06"
         class="inline-flex items-center gap-2 bg-white text-purple-700 hover:bg-purple-100 font-semibold text-lg px-8 py-4 rounded-full shadow-lg transition-all duration-300"
       >
@@ -42,9 +52,10 @@
         Get Started
       </a>
     </div>
-
   </div>
+
 </section>
+
 
 
  
